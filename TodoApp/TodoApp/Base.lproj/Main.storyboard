@@ -135,10 +135,6 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="Irf-qZ-wyp" id="TgU-DB-EK2"/>
-                                    <outlet property="delegate" destination="Irf-qZ-wyp" id="P9e-WD-RWB"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NFK-hb-P1N"/>
