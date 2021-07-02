@@ -48,8 +48,15 @@
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMd-fi-Ci4">
-                                <rect key="frame" x="50" y="353" width="154" height="22"/>
-                                <state key="normal" title=" Keep me sign in" image="seal" catalog="system"/>
+                                <rect key="frame" x="50" y="353" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jSO-kN-a2U"/>
+                                    <constraint firstAttribute="width" constant="30" id="zK5-5Q-khh"/>
+                                </constraints>
+                                <state key="normal" image="checkmark.seal" catalog="system"/>
+                                <connections>
+                                    <action selector="clickCheckBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LSZ-YG-d29"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPc-fn-tGE">
                                 <rect key="frame" x="280" y="353" width="45" height="30"/>
@@ -58,7 +65,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwN-Qa-kxp">
-                                <rect key="frame" x="50" y="395" width="275" height="40"/>
+                                <rect key="frame" x="50" y="403" width="275" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="cg3-0g-fXd"/>
                                 </constraints>
@@ -71,13 +78,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Is-4j-WEj">
-                                <rect key="frame" x="179" y="455" width="17.5" height="23"/>
+                                <rect key="frame" x="179" y="463" width="17.5" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Keep me sign in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnV-xQ-qvr">
+                                <rect key="frame" x="85" y="353" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.052976175110225676" green="0.96125996213577491" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WPc-fn-tGE" firstAttribute="top" secondItem="csW-Jv-hw2" secondAttribute="bottom" constant="20" id="1oF-tF-RHd"/>
                             <constraint firstAttribute="trailing" secondItem="gtt-YR-BbK" secondAttribute="trailing" id="BsQ-f6-N4v"/>
@@ -89,11 +102,13 @@
                             <constraint firstItem="PMd-fi-Ci4" firstAttribute="top" secondItem="csW-Jv-hw2" secondAttribute="bottom" constant="20" id="WrJ-VA-QQE"/>
                             <constraint firstItem="1Mc-0T-Yd8" firstAttribute="top" secondItem="gtt-YR-BbK" secondAttribute="bottom" id="XbA-jn-mY7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="csW-Jv-hw2" secondAttribute="trailing" constant="50" id="Zmj-dL-G2I"/>
+                            <constraint firstItem="CnV-xQ-qvr" firstAttribute="leading" secondItem="PMd-fi-Ci4" secondAttribute="trailing" constant="5" id="Zpv-f0-OfF"/>
                             <constraint firstItem="1Mc-0T-Yd8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cHf-qJ-BWf"/>
                             <constraint firstItem="gtt-YR-BbK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="cO9-f0-Ef4"/>
                             <constraint firstItem="nPp-8e-7mR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="cul-q4-OOD"/>
                             <constraint firstItem="csW-Jv-hw2" firstAttribute="top" secondItem="nPp-8e-7mR" secondAttribute="bottom" constant="20" id="d1W-mP-JVi"/>
                             <constraint firstItem="csW-Jv-hw2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="fwb-uK-8Ur"/>
+                            <constraint firstItem="CnV-xQ-qvr" firstAttribute="top" secondItem="csW-Jv-hw2" secondAttribute="bottom" constant="20" id="gB1-gx-DOd"/>
                             <constraint firstItem="PMd-fi-Ci4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="gm2-6o-REe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WPc-fn-tGE" secondAttribute="trailing" constant="50" id="iU3-7R-hhL"/>
                             <constraint firstItem="9Is-4j-WEj" firstAttribute="top" secondItem="gwN-Qa-kxp" secondAttribute="bottom" constant="20" id="ljK-7A-0Ov"/>
@@ -105,6 +120,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnCheckBox" destination="PMd-fi-Ci4" id="kEt-px-Uqy"/>
                         <outlet property="btnLogin" destination="gwN-Qa-kxp" id="hpJ-qe-G2a"/>
                         <outlet property="tfPassword" destination="csW-Jv-hw2" id="KIe-nh-9Cg"/>
                         <outlet property="tfUserName" destination="nPp-8e-7mR" id="0UT-9Q-nQq"/>
@@ -125,16 +141,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C2j-Sj-PxZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="eFc-V7-FPQ">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eFc-V7-FPQ" id="dCD-wl-mdb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NFK-hb-P1N"/>
@@ -152,12 +158,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rt-kw-eBR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="927" y="93"/>
+            <point key="canvasLocation" x="925.60000000000002" y="92.203898050974516"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logo" width="512" height="512"/>
-        <image name="seal" catalog="system" width="128" height="128"/>
+        <image name="checkmark.seal" catalog="system" width="128" height="128"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

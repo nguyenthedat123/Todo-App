@@ -15,7 +15,10 @@ final class ViewController: UIViewController {
     @IBOutlet weak var tfUserName: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
+    @IBOutlet weak var btnCheckBox: UIButton!
     
+//    let checkedImage = UIImage(named: "checkmark.seal   ")! as UIImage
+//    let uncheckedImage = UIImage(named: "seal")! as UIImage
     //MARK: - LifeCycle
     override func loadView() {
         super.loadView()
@@ -44,7 +47,19 @@ final class ViewController: UIViewController {
             //lam them nut ok da dismiss UIAlertController
             let alert = UIAlertController(title: "Thông báo", message: "Đăng nhập thất bại", preferredStyle: .alert)
             present(alert, animated: true, completion: nil)
+            let alertActionOk = UIAlertAction(title: "OK", style: .default)
+            alert.addAction(alertActionOk)
         }
+    }
+    @IBAction func clickCheckBox(_ sender: Any) {
+        if btnCheckBox.isSelected {
+            self.btnCheckBox.setImage(UIImage(named: "checktrue"), for: .normal)
+            
+        } else {
+            self.btnCheckBox.setImage(UIImage(named: "checkfalse"), for: .normal)
+            
+        }
+        btnCheckBox.isSelected = !btnCheckBox.isSelected
     }
     
 }
