@@ -11,6 +11,7 @@ final class TableViewCell: UITableViewCell {
     // thieu mark nay em
     //MARK: - @IBOutlet
     @IBOutlet weak var btnCheck: UIButton!
+    @IBOutlet weak var textLabel1: UILabel!
     // nen doi lai thanh UIBUtton
     // sau do luc nao an vao button thi goi ham set lai image cho no
     //Ten @IBOutlet phai la: ten button + Btn !! Khong duoc de la check khong nhu the kia
